@@ -5,47 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmett Calloway - Resume</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Basic Reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            box-sizing: border-box;
+        }
+        
+        /* Body and Container Styling */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #333;
-        }
-        p, li {
-            color: #555;
-        }
-        .header, .section {
+
+        /* Header and Title Styling */
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
             margin-bottom: 20px;
         }
-        .contact-info, .skills {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            padding: 0;
+        h1 {
+            font-size: 2.5em;
+            color: #1a73e8;
         }
-        .contact-info li, .skills li {
-            margin: 5px 15px 5px 0;
+        .contact-info {
+            font-size: 1.1em;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            color: #666;
+        }
+        .contact-info li {
+            margin: 0 15px;
+        }
+        .contact-info a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 25px;
         }
         .section-title {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #1a73e8;
+            border-left: 5px solid #1a73e8;
+            padding-left: 10px;
             margin-bottom: 15px;
+        }
+        .section p {
+            color: #444;
+            margin-bottom: 12px;
+        }
+
+        /* Skills Styling */
+        .skills {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+        }
+        .skills li {
+            background-color: #e1f5fe;
+            color: #1a73e8;
+            border-radius: 5px;
+            padding: 8px 12px;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Header -->
         <div class="header">
             <h1>Emmett Calloway</h1>
             <ul class="contact-info">
@@ -54,27 +101,31 @@
                 <li>Phone: (123) 456-7890</li>
             </ul>
         </div>
-        
+
+        <!-- Professional Summary -->
         <div class="section">
             <h2 class="section-title">Professional Summary</h2>
-            <p>Computer Science graduate with a passion for technology and hands-on experience in IT support and computer repair. Originally from Shady Spring, West Virginia, I am currently based in Pennsylvania and actively seeking IT-related work opportunities. I bring a strong work ethic, adaptability, and a commitment to helping others with technical challenges.</p>
+            <p>Computer Science graduate with hands-on experience in IT support and a passion for technology. Originally from Shady Spring, West Virginia, and currently based in Pennsylvania, I am actively seeking IT-related opportunities. Known for my strong work ethic and ability to assist others with a range of technical challenges.</p>
         </div>
 
+        <!-- Education -->
         <div class="section">
             <h2 class="section-title">Education</h2>
             <p><strong>Associate of Science in Computer Science</strong></p>
             <p>New River Community and Technical College, West Virginia</p>
         </div>
 
+        <!-- Experience -->
         <div class="section">
             <h2 class="section-title">Experience</h2>
             <p><strong>Freelance IT Support</strong></p>
-            <p>Provided IT assistance and computer repair services to local residents in Shady Spring, West Virginia. Services included troubleshooting, software installations, and hardware repairs.</p>
-            
+            <p>Provided IT assistance and computer repair services to local residents in Shady Spring, West Virginia, including troubleshooting, software installation, and hardware repairs.</p>
+
             <p><strong>Various Odd Jobs</strong></p>
-            <p>Performed assorted jobs around my community, demonstrating a strong work ethic, flexibility, and a willingness to contribute wherever needed.</p>
+            <p>Undertook assorted roles within my community, demonstrating adaptability, diligence, and a commitment to getting the job done.</p>
         </div>
 
+        <!-- Skills -->
         <div class="section">
             <h2 class="section-title">Skills</h2>
             <ul class="skills">
